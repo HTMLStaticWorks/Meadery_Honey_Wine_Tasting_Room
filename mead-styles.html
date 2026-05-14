@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mead Styles | Nectar</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <style>
+
+
+        .style-card {
+            background: var(--surface);
+            padding: 40px 40px 60px 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            height: 100%;
+            transition: var(--transition);
+            margin-bottom: 30px;
+        }
+
+        .style-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow);
+        }
+
+        .style-card h2 {
+            margin-bottom: 15px;
+        }
+
+        .style-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(217, 119, 6, 0.1);
+            color: var(--accent);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Artisan Home</a>
+                        <a href="home-2.html" class="dropdown-item">Modern Experience</a>
+                    </div>
+                </li>
+                <li><a href="mead-styles.html" class="nav-link active">Mead Styles</a></li>
+                <li><a href="tasting-room.html" class="nav-link">Tasting Room</a></li>
+                <li><a href="bottle-shop.html" class="nav-link">Shop</a></li>
+                <li><a href="mead-making-classes.html" class="nav-link">Classes</a></li>
+                <li><a href="membership-club.html" class="nav-link">Membership</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right d-none d-lg-flex">
+                <a href="cart.html" class="position-relative me-3">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.2rem; color: var(--primary);"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="rtl-toggle">RTL</button>
+                <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Signup</a>
+            </div>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+        <div class="mobile-nav-links">
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-link has-dropdown">Home <i class="fas fa-chevron-down ms-auto"></i></a>
+                <div class="mobile-dropdown">
+                    <a href="index.html" class="mobile-dropdown-link">Artisan Home</a>
+                    <a href="home-2.html" class="mobile-dropdown-link">Modern Experience</a>
+                </div>
+            </div>
+            <a href="mead-styles.html" class="mobile-nav-link active">Mead Styles</a>
+            <a href="tasting-room.html" class="mobile-nav-link">Tasting Room</a>
+            <a href="bottle-shop.html" class="mobile-nav-link">Shop</a>
+            <a href="mead-making-classes.html" class="mobile-nav-link">Classes</a>
+            <a href="membership-club.html" class="mobile-nav-link">Membership</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+        <div class="mobile-actions">
+            <a href="cart.html" class="mobile-action-btn">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+            <button class="mobile-action-btn theme-toggle">
+                <i class="fas fa-moon"></i> Theme
+            </button>
+            <button class="mobile-action-btn rtl-toggle">
+                RTL
+            </button>
+            <a href="signup.html" class="mobile-action-btn" style="background: var(--primary); color: white; border-color: var(--primary);">
+                Signup
+            </a>
+        </div>
+    </div>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="fade-up">Explore the Diversity of Mead</h1>
+            <p class="fade-up" style="max-width: 700px; margin: 20px auto 0;">From the world's oldest fermentation
+                traditions come a vast array of styles. Discover the unique characteristics of each honey wine category.
+            </p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">The Foundation</span>
+                        <h2>Traditional Mead</h2>
+                        <p>The purest expression of the art. Made with only honey, water, and yeast. The flavor profile
+                            is entirely dependent on the floral source of the honey—ranging from the light, citrus notes
+                            of Orange Blossom to the rich, earthy depth of Buckwheat.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Dry, Semi-Sweet, Sweet.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Traditionals</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">Fruit Infused</span>
+                        <h2>Melomel</h2>
+                        <p>Mead fermented or aged with fruit. This style combines the floral honey base with the vibrant
+                            acidity and color of berries, stone fruits, or tropical favorites. Melomels are often lush,
+                            full-bodied, and visually stunning.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Blackberry, Raspberry, Peach, Cherry.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Melomels</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">Spiced Heritage</span>
+                        <h2>Metheglin</h2>
+                        <p>Ancient mead enhanced with herbs and spices. Derived from the Welsh word for medicine,
+                            metheglins historically featured botanical infusions for health and flavor. Expect warm
+                            notes of cinnamon, clove, ginger, or vanilla.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Spiced Chai, Lavender, Winter Warmers.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Metheglins</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">Apple Blend</span>
+                        <h2>Cyser</h2>
+                        <p>A harmonious marriage of honey and apple juice (cider). Cysers offer a crisp, refreshing
+                            acidity that balances the natural sweetness of honey. It's the perfect bridge between
+                            traditional cider and full-bodied mead.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Crisp Apple, Oak-Aged Cyser.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Cysers</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">Grape Hybrid</span>
+                        <h2>Pyment</h2>
+                        <p>A blend of honey and grapes or grape juice. Pyment combines the structure and tannins of wine
+                            with the aromatic complexity of mead. It's a sophisticated style favored by wine
+                            enthusiasts.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Red Grape, White Grape Pyment.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Pyments</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="style-card fade-up">
+                        <span class="style-tag">Modern & Sessionable</span>
+                        <h2>Hydromel (Session Mead)</h2>
+                        <p>Lighter, lower-alcohol meads often carbonated for a refreshing, beer-like experience. Perfect
+                            for summer afternoons, these meads highlight delicate floral notes with a crisp, bubbly
+                            finish.</p>
+                        <p class="mt-3"><strong>Key Profiles:</strong> Sparkling Honey, Botanical Session.</p>
+                        <a href="bottle-shop.html" class="btn btn-outline mt-4">Shop Sessions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--surface); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="fade-up">
+                        <img src="assets/images/mead_food_pairing.png" alt="Mead and Food Pairing" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="fade-up">
+                        <span class="color-accent fw-bold text-uppercase" style="letter-spacing: 2px;">The Culinary Experience</span>
+                        <h2 class="my-4">Perfect Pairings</h2>
+                        <p class="mb-5">Mead's incredible versatility makes it a dream for food lovers. Whether you're serving a dry traditional mead or a rich, fruit-forward melomel, there's a perfect culinary companion waiting to be discovered.</p>
+                        
+                        <div class="pairing-item mb-4 pb-4 border-bottom">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="pairing-icon"><i class="fas fa-cheese color-accent fa-2x"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Traditional & Artisanal Cheeses</h5>
+                                    <p class="text-muted small">Dry traditional meads pair beautifully with aged cheddar or salty pecorino, while sweet varieties complement creamy brie and blue cheeses.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pairing-item mb-4 pb-4 border-bottom">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="pairing-icon"><i class="fas fa-utensils color-accent fa-2x"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Melomels & Roasted Meats</h5>
+                                    <p class="text-muted small">The dark fruit notes of a Blackberry Melomel are a revelation when served alongside roasted duck or gamey meats with balsamic glazes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pairing-item">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="pairing-icon"><i class="fas fa-cookie color-accent fa-2x"></i></div>
+                                <div>
+                                    <h5 class="mb-2">Metheglins & Spiced Desserts</h5>
+                                    <p class="text-muted small">Warm spiced metheglins are the ultimate partner for apple crumbles, pumpkin pies, and dark chocolate truffles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+                    <p style="opacity: 0.8;">Crafting the finest honey wines using traditional methods and local
+                        ingredients. A journey of taste in every bottle.</p>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="mead-styles.html">Mead Styles</a></li>
+                        <li><a href="tasting-room.html">Tasting Room</a></li>
+                        <li><a href="bottle-shop.html">Bottle Shop</a></li>
+                        <li><a href="mead-making-classes.html">Mead Classes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="membership-club.html">Membership Club</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Join Our Journal</h4>
+                    <p style="opacity: 0.8; margin-bottom: 20px;">Get updates on new releases, seasonal events, and
+                        mead-making tips.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button class="btn btn-primary w-100 mt-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nectar Meadery. All rights reserved. Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

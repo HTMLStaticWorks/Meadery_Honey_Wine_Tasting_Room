@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tasting Room | Nectar Meadery</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <style>
+
+
+        .experience-card {
+            border: none;
+            background: var(--surface);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .experience-card:hover {
+            transform: scale(1.02);
+        }
+
+        .experience-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .booking-container {
+            background: var(--surface);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Artisan Home</a>
+                        <a href="home-2.html" class="dropdown-item">Modern Experience</a>
+                    </div>
+                </li>
+                <li><a href="mead-styles.html" class="nav-link">Mead Styles</a></li>
+                <li><a href="tasting-room.html" class="nav-link active">Tasting Room</a></li>
+                <li><a href="bottle-shop.html" class="nav-link">Shop</a></li>
+                <li><a href="mead-making-classes.html" class="nav-link">Classes</a></li>
+                <li><a href="membership-club.html" class="nav-link">Membership</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right d-none d-lg-flex">
+                <a href="cart.html" class="position-relative me-3">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.2rem; color: var(--primary);"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="rtl-toggle">RTL</button>
+                <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Signup</a>
+            </div>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+        <div class="mobile-nav-links">
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-link has-dropdown">Home <i class="fas fa-chevron-down ms-auto"></i></a>
+                <div class="mobile-dropdown">
+                    <a href="index.html" class="mobile-dropdown-link">Artisan Home</a>
+                    <a href="home-2.html" class="mobile-dropdown-link">Modern Experience</a>
+                </div>
+            </div>
+            <a href="mead-styles.html" class="mobile-nav-link">Mead Styles</a>
+            <a href="tasting-room.html" class="mobile-nav-link active">Tasting Room</a>
+            <a href="bottle-shop.html" class="mobile-nav-link">Shop</a>
+            <a href="mead-making-classes.html" class="mobile-nav-link">Classes</a>
+            <a href="membership-club.html" class="mobile-nav-link">Membership</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+        <div class="mobile-actions">
+            <a href="cart.html" class="mobile-action-btn">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+            <button class="mobile-action-btn theme-toggle">
+                <i class="fas fa-moon"></i> Theme
+            </button>
+            <button class="mobile-action-btn rtl-toggle">
+                RTL
+            </button>
+            <a href="signup.html" class="mobile-action-btn" style="background: var(--primary); color: white; border-color: var(--primary);">
+                Signup
+            </a>
+        </div>
+    </div>
+
+    <header class="tasting-hero">
+        <div class="container">
+            <h1 class="fade-up">An Immersive Journey</h1>
+            <p class="fade-up">Savor the liquid gold in our artisan sanctuary.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fade-up">Curated Tasting Experiences</h2>
+                <p class="fade-up" style="max-width: 600px; margin: 0 auto;">Choose the journey that suits your palate.
+                    All tastings include a guided narrative by our mead experts.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="experience-card fade-up">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=600"
+                            alt="Flight" class="experience-img">
+                        <div class="p-4">
+                            <h3>The Flight of Discovery</h3>
+                            <p class="text-muted">A perfect introduction. Enjoy 5 seasonal meads ranging from dry to
+                                sweet.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0">$25 / person</span>
+                                <button class="btn btn-outline">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="experience-card fade-up">
+                        <img src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&q=80&w=600"
+                            alt="Cellar" class="experience-img">
+                        <div class="p-4">
+                            <h3>The Master's Reserve</h3>
+                            <p class="text-muted">A deep dive into our cellar. Taste limited releases and vertical
+                                vintages.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0">$45 / person</span>
+                                <button class="btn btn-outline">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="experience-card fade-up">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=600"
+                            alt="Pairing" class="experience-img">
+                        <div class="p-4">
+                            <h3>Honey & Hearth Pairing</h3>
+                            <p class="text-muted">A culinary exploration. 4 premium meads paired with local artisan
+                                cheeses.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="h5 mb-0">$60 / person</span>
+                                <button class="btn btn-outline">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--background);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="booking-container fade-up">
+                        <h2 class="text-center mb-4">Reserve Your Experience</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Select Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Number of Guests</label>
+                                    <select class="form-control">
+                                        <option>1 Guest</option>
+                                        <option>2 Guests</option>
+                                        <option>3 Guests</option>
+                                        <option>4 Guests</option>
+                                        <option>5+ Guests</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label class="form-label">Experience Type</label>
+                                    <select class="form-control">
+                                        <option>The Flight of Discovery</option>
+                                        <option>The Master's Reserve</option>
+                                        <option>Honey & Hearth Pairing</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <label class="form-label">Special Occasion / Notes</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="Tell us about your visit..."></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">Book Reservation</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+                    <p style="opacity: 0.8;">Crafting the finest honey wines using traditional methods and local
+                        ingredients. A journey of taste in every bottle.</p>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="mead-styles.html">Mead Styles</a></li>
+                        <li><a href="tasting-room.html">Tasting Room</a></li>
+                        <li><a href="bottle-shop.html">Bottle Shop</a></li>
+                        <li><a href="mead-making-classes.html">Mead Classes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="membership-club.html">Membership Club</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Join Our Journal</h4>
+                    <p style="opacity: 0.8; margin-bottom: 20px;">Get updates on new releases, seasonal events, and
+                        mead-making tips.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button class="btn btn-primary w-100 mt-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nectar Meadery. All rights reserved. Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

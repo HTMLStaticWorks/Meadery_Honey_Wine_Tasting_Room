@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mead-Making Classes | Nectar Meadery</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <style>
+
+
+        .class-card {
+            background: var(--surface);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            height: 100%;
+        }
+
+        .class-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .curriculum-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .curriculum-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .curriculum-list li i {
+            color: var(--accent);
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Artisan Home</a>
+                        <a href="home-2.html" class="dropdown-item">Modern Experience</a>
+                    </div>
+                </li>
+                <li><a href="mead-styles.html" class="nav-link">Mead Styles</a></li>
+                <li><a href="tasting-room.html" class="nav-link">Tasting Room</a></li>
+                <li><a href="bottle-shop.html" class="nav-link">Shop</a></li>
+                <li><a href="mead-making-classes.html" class="nav-link active">Classes</a></li>
+                <li><a href="membership-club.html" class="nav-link">Membership</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html" class="position-relative me-3">
+                    <i class="fas fa-shopping-cart" style="font-size: 1.2rem; color: var(--primary);"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="rtl-toggle" class="rtl-toggle">RTL</button>
+                <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Signup</a>
+            </div>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <header class="class-hero">
+        <div class="container">
+            <h1 class="fade-up">Master the Craft of Mead</h1>
+            <p class="fade-up">Join our
+                master mead-makers for hands-on workshops. Learn the chemistry, the history, and the art of
+                fermentation.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Class 1 -->
+                <div class="col-lg-6">
+                    <div class="class-card fade-up">
+                        <img src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&q=80&w=1200"
+                            alt="Intro Class" class="class-img">
+                        <div class="p-5">
+                            <span class="color-accent fw-bold">Beginner Level</span>
+                            <h2 class="my-3">Mead Making 101</h2>
+                            <p class="mb-4">Everything you need to know to start your first batch at home. We cover
+                                honey selection, yeast hydration, sanitation, and basic equipment.</p>
+                            <h5 class="mb-3">What You'll Learn:</h5>
+                            <ul class="curriculum-list mb-4">
+                                <li><i class="fas fa-check"></i> Floral sources & honey varietals</li>
+                                <li><i class="fas fa-check"></i> Basic fermentation science</li>
+                                <li><i class="fas fa-check"></i> Using a hydrometer for precision</li>
+                                <li><i class="fas fa-check"></i> Bottling & Aging techniques</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="d-block text-muted">Next Class: June 15th</span>
+                                    <span class="h4 mb-0">$85 / person</span>
+                                </div>
+                                <button class="btn btn-primary">Reserve Spot</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Class 2 -->
+                <div class="col-lg-6">
+                    <div class="class-card fade-up">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200"
+                            alt="Advanced Class" class="class-img">
+                        <div class="p-5">
+                            <span class="color-accent fw-bold">Advanced Level</span>
+                            <h2 class="my-3">Botanical Infusions</h2>
+                            <p class="mb-4">Take your mead to the next level by mastering the art of metheglins and
+                                melomels. Learn how to balance spices and fruits without overpowering the honey.</p>
+                            <h5 class="mb-3">What You'll Learn:</h5>
+                            <ul class="curriculum-list mb-4">
+                                <li><i class="fas fa-check"></i> Fruit processing for fermentation</li>
+                                <li><i class="fas fa-check"></i> Tincture vs. Direct addition of spices</li>
+                                <li><i class="fas fa-check"></i> Back-sweetening & Balancing acidity</li>
+                                <li><i class="fas fa-check"></i> Oak aging & Tannin management</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="d-block text-muted">Next Class: July 2nd</span>
+                                    <span class="h4 mb-0">$120 / person</span>
+                                </div>
+                                <button class="btn btn-primary">Reserve Spot</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class FAQ -->
+    <section class="section-padding" style="background: var(--surface);">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-accordion">
+                        <div class="faq-item fade-up">
+                            <div class="faq-header">
+                                <h4>Do I need to bring my own equipment?</h4>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>No, we provide all the necessary tools and ingredients for the workshop. You'll even leave with a 1-gallon fermenter and your first batch started!</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-up">
+                            <div class="faq-header">
+                                <h4>Is there an age requirement?</h4>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>Yes, all participants must be 21 years of age or older as tasting is an integral part of the curriculum.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-up">
+                            <div class="faq-header">
+                                <h4>What is your cancellation policy?</h4>
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>Full refunds are available up to 72 hours before the class. After that, we can offer credit toward a future workshop.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
+                    <p style="opacity: 0.8;">Crafting the finest honey wines using traditional methods and local
+                        ingredients. A journey of taste in every bottle.</p>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="mead-styles.html">Mead Styles</a></li>
+                        <li><a href="tasting-room.html">Tasting Room</a></li>
+                        <li><a href="bottle-shop.html">Bottle Shop</a></li>
+                        <li><a href="mead-making-classes.html">Mead Classes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="membership-club.html">Membership Club</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Join Our Journal</h4>
+                    <p style="opacity: 0.8; margin-bottom: 20px;">Get updates on new releases, seasonal events, and
+                        mead-making tips.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button class="btn btn-primary w-100 mt-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nectar Meadery. All rights reserved. Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
