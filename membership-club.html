@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <style>
-
-
         .tier-card {
             background: var(--surface);
             border-radius: 20px;
@@ -70,6 +68,19 @@
         .perk-card:hover .perk-img {
             transform: scale(1.03);
         }
+
+        @media (max-width: 1199px) {
+            .tier-card.featured {
+                transform: none;
+                z-index: 1;
+                margin: 30px 0;
+            }
+
+            .tier-card {
+                padding: 40px 30px;
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -92,7 +103,7 @@
                 <li><a href="tasting-room.html" class="nav-link">Tasting Room</a></li>
                 <li><a href="bottle-shop.html" class="nav-link">Shop</a></li>
                 <li><a href="mead-making-classes.html" class="nav-link">Classes</a></li>
-                <li><a href="membership-club.html" class="nav-link active">Membership</a></li>
+                <li><a href="membership-club.html" class="nav-link">Membership</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -101,13 +112,48 @@
                     <i class="fas fa-shopping-cart" style="font-size: 1.2rem; color: var(--primary);"></i>
                     <span class="cart-badge">0</span>
                 </a>
-                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
-                <button id="rtl-toggle" class="rtl-toggle">RTL</button>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="rtl-toggle">RTL</button>
                 <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Signup</a>
             </div>
             <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close"><i class="fas fa-times"></i></div>
+        <div class="mobile-nav-links">
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-link has-dropdown">Home <i class="fas fa-chevron-down ms-auto"></i></a>
+                <div class="mobile-dropdown">
+                    <a href="index.html" class="mobile-dropdown-link">Artisan Home</a>
+                    <a href="home-2.html" class="mobile-dropdown-link">Modern Experience</a>
+                </div>
+            </div>
+            <a href="mead-styles.html" class="mobile-nav-link">Mead Styles</a>
+            <a href="tasting-room.html" class="mobile-nav-link">Tasting Room</a>
+            <a href="bottle-shop.html" class="mobile-nav-link">Shop</a>
+            <a href="mead-making-classes.html" class="mobile-nav-link">Classes</a>
+            <a href="membership-club.html" class="mobile-nav-link">Membership</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+        <div class="mobile-actions">
+            <a href="cart.html" class="mobile-action-btn">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+            <button class="mobile-action-btn theme-toggle">
+                <i class="fas fa-moon"></i> Theme
+            </button>
+            <button class="mobile-action-btn rtl-toggle">
+                RTL
+            </button>
+            <a href="signup.html" class="mobile-action-btn"
+                style="background: var(--primary); color: white; border-color: var(--primary);">
+                Signup
+            </a>
+        </div>
+    </div>
 
     <header class="club-hero">
         <div class="container">
@@ -119,9 +165,9 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="row g-4 align-items-center">
+            <div class="row g-4 gy-5 justify-content-center">
                 <!-- Tier 1 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="tier-card fade-up">
                         <h3>Worker Bee</h3>
                         <p class="text-muted">The perfect introduction</p>
@@ -136,7 +182,7 @@
                     </div>
                 </div>
                 <!-- Tier 2 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="tier-card featured fade-up">
                         <span class="badge bg-warning text-dark mb-3">Most Popular</span>
                         <h3>Queen's Guard</h3>
@@ -153,7 +199,7 @@
                     </div>
                 </div>
                 <!-- Tier 3 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="tier-card fade-up">
                         <h3>Ambrosia Collector</h3>
                         <p class="text-muted">For the ultimate connoisseur</p>
@@ -178,29 +224,33 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-6 text-center">
                     <h2 class="fade-up">Beyond The Bottle</h2>
-                    <p class="fade-up">As a member, you're not just buying mead—you're joining a community dedicated to the craft of artisan fermentation.</p>
+                    <p class="fade-up">As a member, you're not just buying mead—you're joining a community dedicated to
+                        the craft of artisan fermentation.</p>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <div class="row g-4 gy-5 justify-content-center">
+                <div class="col-lg-4 col-md-6">
                     <div class="perk-card text-center p-3 fade-up">
                         <img src="assets/images/perk-reservations.png" alt="Priority Reservations" class="perk-img">
                         <h4>Priority Reservations</h4>
-                        <p class="text-muted">Skip the wait at our tasting room with guaranteed seating and private table service for you and your guests.</p>
+                        <p class="text-muted">Skip the wait at our tasting room with guaranteed seating and private
+                            table service for you and your guests.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="perk-card text-center p-3 fade-up">
                         <img src="assets/images/perk-access.png" alt="First Batch Access" class="perk-img">
                         <h4>First Batch Access</h4>
-                        <p class="text-muted">Taste our experimental micro-batches before they hit the general public. Help us shape the future of our blends.</p>
+                        <p class="text-muted">Taste our experimental micro-batches before they hit the general public.
+                            Help us shape the future.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="perk-card text-center p-3 fade-up">
                         <img src="assets/images/perk-shipment.png" alt="Curated Shipments" class="perk-img">
                         <h4>Curated Shipments</h4>
-                        <p class="text-muted">Each quarterly shipment is hand-selected by our head mead-maker, accompanied by detailed tasting notes and pairings.</p>
+                        <p class="text-muted">Each quarterly shipment is hand-selected by our head mead-maker,
+                            accompanied by detailed tasting notes and pairings.</p>
                     </div>
                 </div>
             </div>
@@ -258,8 +308,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="assets/js/theme-toggle.js"></script>
-    <script src="assets/js/rtl-toggle.js"></script>
+
+
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

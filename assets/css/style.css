@@ -192,8 +192,14 @@ img {
     transition: var(--transition);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: var(--accent);
+    font-weight: 600;
 }
 
 .nav-right {
@@ -235,6 +241,37 @@ img {
 .btn-outline:hover {
     background: var(--primary);
     color: #fff;
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+
+/* Password Toggle */
+.password-field-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #a8a29e;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: var(--transition);
+}
+
+.password-toggle:hover {
+    color: var(--accent);
 }
 
 /* Dropdown */
@@ -475,10 +512,18 @@ footer {
     font-weight: 600;
     color: var(--primary);
     border-bottom: 1px solid var(--border);
-    padding-bottom: 10px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     width: 100%;
+    transition: var(--transition);
+    border-radius: 8px;
+}
+
+.mobile-nav-link.active {
+    background: rgba(217, 119, 6, 0.08);
+    color: var(--accent);
+    border-bottom-color: var(--accent);
 }
 
 .mobile-nav-link i {
@@ -688,6 +733,26 @@ footer {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 991px) {
+    .membership-cta-card {
+        padding: 60px 30px;
+        text-align: center;
+    }
+    .membership-cta-card h2 {
+        font-size: 2.5rem !important;
+    }
+    .membership-cta-card p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .benefit-item {
+        justify-content: center;
+    }
+    .benefit-list {
+        margin-bottom: 40px;
+    }
+}
+
 .cta-form-wrapper h4 {
     margin-bottom: 25px;
     font-size: 1.8rem;
@@ -746,6 +811,19 @@ footer {
     border: 1px solid var(--border);
     height: 100%;
     transition: var(--transition);
+    overflow: hidden;
+}
+
+.info-card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (max-width: 991px) {
+    .info-card {
+        padding: 30px 20px;
+    }
 }
 
 .info-card:hover {

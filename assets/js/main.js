@@ -9,6 +9,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Active Menu Highlighting
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .dropdown-item, .mobile-dropdown-link');
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') return;
+
+        // Exact match
+        let isMatch = href === currentPath;
+
+        // Detail page matches
+        if (currentPath.includes('product-details') && href === 'bottle-shop.html') isMatch = true;
+        if (currentPath.includes('blog-details') && href === 'blog.html') isMatch = true;
+        
+        if (isMatch) {
+            link.classList.add('active');
+            
+            // Highlight parents for dropdowns
+            const dropdownParent = link.closest('.dropdown');
+            if (dropdownParent) {
+                const parentLink = dropdownParent.querySelector('.nav-link');
+                if (parentLink) parentLink.classList.add('active');
+            }
+
+            const mobileDropdownParent = link.closest('.mobile-nav-item');
+            if (mobileDropdownParent) {
+                const parentLink = mobileDropdownParent.querySelector('.mobile-nav-link');
+                if (parentLink) parentLink.classList.add('active');
+                
+                // Also open the mobile dropdown
+                const menu = mobileDropdownParent.querySelector('.mobile-dropdown');
+                if (menu) {
+                    parentLink.classList.add('active');
+                    menu.classList.add('active');
+                }
+            }
+        }
+    });
+
+    // Password Visibility Toggle
+    const passwordToggles = document.querySelectorAll('.password-toggle');
+    passwordToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const input = toggle.parentElement.querySelector('input');
+            const icon = toggle.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    });
+
     // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
