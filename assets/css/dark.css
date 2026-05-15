@@ -71,6 +71,11 @@ body.dark-mode .rtl-toggle {
     border-color: rgba(251, 191, 36, 0.3);
 }
 
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .rtl-toggle:hover {
+    color: #1C1917;
+}
+
 body.dark-mode .logo,
 body.dark-mode .footer-logo {
     color: #FBBF24;
@@ -78,4 +83,28 @@ body.dark-mode .footer-logo {
 
 body.dark-mode .nav-link::after {
     background-color: #FBBF24;
+}
+
+body.dark-mode .btn-social {
+    background: #292524;
+    border-color: #44403C;
+    color: #F5F5F4;
+}
+
+body.dark-mode .btn-social:hover {
+    background: #1C1917;
+    border-color: #FBBF24;
+}
+
+body.dark-mode .btn-social i {
+    color: #FBBF24;
+}
+
+body.dark-mode .divider {
+    color: #A8A29E;
+}
+
+body.dark-mode .divider::before,
+body.dark-mode .divider::after {
+    border-color: #44403C;
 }

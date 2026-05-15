@@ -20,6 +20,8 @@
             text-align: center;
             transition: var(--transition);
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .tier-card.featured {
@@ -28,6 +30,24 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
             position: relative;
             z-index: 2;
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: #fff;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+            white-space: nowrap;
+            display: inline-block;
         }
 
         .tier-price {
@@ -42,6 +62,7 @@
             padding: 0;
             margin: 30px 0;
             text-align: left;
+            flex-grow: 1;
         }
 
         .tier-features li {
@@ -71,16 +92,25 @@
 
         @media (max-width: 1199px) {
             .tier-card.featured {
-                transform: none;
+                transform: none !important;
+                margin: 0 !important;
                 z-index: 1;
-                margin: 30px 0;
             }
 
             .tier-card {
                 padding: 40px 30px;
-                margin-bottom: 30px;
+                margin-top: 30px; /* Consistently push all cards down */
+                margin-bottom: 50px;
+            }
+            
+            .row.gy-5 {
+                --bs-gutter-y: 6rem !important; /* Force extra vertical space between rows */
             }
         }
+
+
+
+
     </style>
 </head>
 
@@ -165,7 +195,7 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="row g-4 gy-5 justify-content-center">
+            <div class="row g-4 justify-content-center" style="row-gap: 5rem;">
                 <!-- Tier 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="tier-card fade-up">
@@ -184,7 +214,7 @@
                 <!-- Tier 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="tier-card featured fade-up">
-                        <span class="badge bg-warning text-dark mb-3">Most Popular</span>
+                        <div class="popular-tag">Most Popular</div>
                         <h3>Queen's Guard</h3>
                         <p class="text-muted">For the true enthusiast</p>
                         <div class="tier-price">$85<span style="font-size: 1rem;">/quarter</span></div>
@@ -193,13 +223,12 @@
                             <li><i class="fas fa-check"></i> 20% discount on all orders</li>
                             <li><i class="fas fa-check"></i> Unlimited free tastings for 2</li>
                             <li><i class="fas fa-check"></i> VIP access to mead classes</li>
-                            <li><i class="fas fa-check"></i> Annual member-only banquet</li>
                         </ul>
                         <button class="btn btn-primary w-100">Select Tier</button>
                     </div>
                 </div>
                 <!-- Tier 3 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 pt-md-5 pt-lg-0">
                     <div class="tier-card fade-up">
                         <h3>Ambrosia Collector</h3>
                         <p class="text-muted">For the ultimate connoisseur</p>
@@ -209,7 +238,6 @@
                             <li><i class="fas fa-check"></i> 25% discount on all orders</li>
                             <li><i class="fas fa-check"></i> Private cellar tours with the maker</li>
                             <li><i class="fas fa-check"></i> Guaranteed access to all releases</li>
-                            <li><i class="fas fa-check"></i> Personalized wax-sealed bottles</li>
                         </ul>
                         <button class="btn btn-outline w-100">Select Tier</button>
                     </div>

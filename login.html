@@ -34,9 +34,9 @@
 </head>
 
 <body>
-    <div class="auth-container">
-        <div class="auth-card fade-up position-relative">
-            <button  class="rtl-toggle position-absolute" style="top: 20px; right: 20px; margin: 0;">RTL</button>
+    <div class="auth-container position-relative">
+        <button class="rtl-toggle position-absolute" style="top: 30px; right: 30px; z-index: 1000; margin: 0;">RTL</button>
+        <div class="auth-card fade-up">
             <a href="index.html" class="logo mb-4 d-flex justify-content-center"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
             <h2 class="mb-4 text-center">Welcome Back</h2>
             <form>
@@ -53,12 +53,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="form-check">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-nowrap">
+                    <div class="form-check mb-0">
                         <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label small" for="remember">Remember me</label>
+                        <label class="form-check-label" for="remember" style="font-size: 0.75rem;">Remember me</label>
                     </div>
-                    <a href="#" class="small color-accent">Forgot password?</a>
+                    <a href="#" class="color-accent fw-medium" style="font-size: 0.75rem; white-space: nowrap;">Forgot password?</a>
                 </div>
                 <button type="submit" class="btn btn-primary w-100 py-3">Sign In</button>
 
