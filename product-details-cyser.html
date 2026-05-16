@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,43 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <style>
-        .product-gallery { background: var(--surface); padding: 60px; border-radius: 20px; display: flex; justify-content: center; align-items: center; border: 1px solid var(--border); }
-        .product-img-large { height: 500px; object-fit: contain; }
-        .spec-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); }
-        .spec-label { font-weight: 600; color: var(--primary); }
+        .product-gallery {
+            background: var(--surface);
+            padding: 60px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--border);
+        }
+
+        .product-img-large {
+            height: 500px;
+            object-fit: contain;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary);
+        }
     </style>
 </head>
+
 <body>
     <nav class="navbar scrolled">
         <div class="container nav-container">
             <a href="index.html" class="logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
                     <div class="dropdown-menu">
                         <a href="index.html" class="dropdown-item">Artisan Home</a>
                         <a href="home-2.html" class="dropdown-item">Modern Experience</a>
@@ -38,9 +63,10 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <a href="cart.html" class="position-relative me-3"><i class="fas fa-shopping-cart" style="font-size: 1.2rem; color: var(--primary);"></i><span class="cart-badge">0</span></a>
-                <button  class="theme-toggle"><i class="fas fa-moon"></i></button>
-                <button  class="rtl-toggle">RTL</button>
+                <a href="cart.html" class="position-relative me-3"><i class="fas fa-shopping-cart"
+                        style="font-size: 1.2rem; color: var(--primary);"></i><span class="cart-badge">0</span></a>
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="rtl-toggle">RTL</button>
                 <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Signup</a>
             </div>
             <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
@@ -75,7 +101,8 @@
             <button class="mobile-action-btn rtl-toggle">
                 RTL
             </button>
-            <a href="signup.html" class="mobile-action-btn" style="background: var(--primary); color: white; border-color: var(--primary);">
+            <a href="signup.html" class="mobile-action-btn"
+                style="background: var(--primary); color: white; border-color: var(--primary);">
                 Signup
             </a>
         </div>
@@ -86,7 +113,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="product-gallery fade-up">
-                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=1200" alt="Golden Heirloom Cyser" class="product-img-large">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=1200"
+                            alt="Golden Heirloom Cyser" class="product-img-large">
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
@@ -94,18 +122,29 @@
                         <span class="color-accent fw-bold text-uppercase" style="letter-spacing: 2px;">Cyser</span>
                         <h1 class="my-3">Golden Heirloom Cyser</h1>
                         <p class="h3 color-accent mb-4">$35.00</p>
-                        <p class="mb-4">Where the orchard meets the apiary. Our Golden Heirloom Cyser is a traditional blend of fresh-pressed heirloom apple juice and raw clover honey. This sparkling mead-cider hybrid offers the crisp acidity of a fine apple wine with the floral depth and silky mouthfeel that only honey can provide.</p>
+                        <p class="mb-4">Where the orchard meets the apiary. Our Golden Heirloom Cyser is a traditional
+                            blend of fresh-pressed heirloom apple juice and raw clover honey. This sparkling mead-cider
+                            hybrid offers the crisp acidity of a fine apple wine with the floral depth and silky
+                            mouthfeel that only honey can provide.</p>
 
                         <div class="mb-4">
                             <h5 class="mb-3">Tasting Notes</h5>
-                            <p class="text-muted"><i class="fas fa-dot-circle color-accent me-2"></i><strong>Aroma:</strong> Tart green apple, honey blossoms, and a hint of wet stone.</p>
-                            <p class="text-muted"><i class="fas fa-dot-circle color-accent me-2"></i><strong>Palate:</strong> High acidity, crisp apple skin, and a medium honey sweetness.</p>
-                            <p class="text-muted"><i class="fas fa-dot-circle color-accent me-2"></i><strong>Finish:</strong> Effervescent, bright, and very refreshing.</p>
+                            <p class="text-muted"><i
+                                    class="fas fa-dot-circle color-accent me-2"></i><strong>Aroma:</strong> Tart green
+                                apple, honey blossoms, and a hint of wet stone.</p>
+                            <p class="text-muted"><i
+                                    class="fas fa-dot-circle color-accent me-2"></i><strong>Palate:</strong> High
+                                acidity, crisp apple skin, and a medium honey sweetness.</p>
+                            <p class="text-muted"><i
+                                    class="fas fa-dot-circle color-accent me-2"></i><strong>Finish:</strong>
+                                Effervescent, bright, and very refreshing.</p>
                         </div>
 
                         <div class="d-flex align-items-center gap-3 mb-5">
-                            <div class="d-flex align-items-center border p-2 rounded" style="width: 120px; justify-content: space-between;">
-                                <button class="btn p-0 px-2">-</button><span>1</span><button class="btn p-0 px-2">+</button>
+                            <div class="d-flex align-items-center border p-2 rounded"
+                                style="width: 120px; justify-content: space-between;">
+                                <button class="btn p-0 px-2">-</button><span>1</span><button
+                                    class="btn p-0 px-2">+</button>
                             </div>
                             <button class="btn btn-primary add-to-cart flex-grow-1 py-3">Add to Collection</button>
                         </div>
@@ -113,8 +152,10 @@
                         <div class="product-specs">
                             <div class="spec-item"><span class="spec-label">ABV</span><span>12%</span></div>
                             <div class="spec-item"><span class="spec-label">Volume</span><span>750ml</span></div>
-                            <div class="spec-item"><span class="spec-label">Fruit</span><span>Heirloom Apple Blend</span></div>
-                            <div class="spec-item"><span class="spec-label">Style</span><span>Sparkling Cyser</span></div>
+                            <div class="spec-item"><span class="spec-label">Fruit</span><span>Heirloom Apple
+                                    Blend</span></div>
+                            <div class="spec-item"><span class="spec-label">Style</span><span>Sparkling Cyser</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +169,8 @@
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="footer-logo"><i class="fas fa-wine-glass me-2"></i>NECTAR</a>
-                    <p style="opacity: 0.8;">Crafting the finest honey wines using traditional methods and local ingredients. A journey of taste in every bottle.</p>
+                    <p style="opacity: 0.8;">Crafting the finest honey wines using traditional methods and local
+                        ingredients. A journey of taste in every bottle.</p>
                     <div class="footer-social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -156,7 +198,8 @@
                 </div>
                 <div>
                     <h4 class="footer-heading">Join Our Journal</h4>
-                    <p style="opacity: 0.8; margin-bottom: 20px;">Get updates on new releases, seasonal events, and mead-making tips.</p>
+                    <p style="opacity: 0.8; margin-bottom: 20px;">Get updates on new releases, seasonal events, and
+                        mead-making tips.</p>
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="Your Email Address">
                         <button class="btn btn-primary w-100 mt-2">Subscribe</button>
@@ -171,10 +214,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    
+
+
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>
 
+</html>
